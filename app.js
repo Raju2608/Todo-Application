@@ -11,7 +11,7 @@ app.use(express.json());
 
 let database = null;
 
-const initializeDbServer = async () => {
+const initializeDbAndServer = async () => {
   try {
     database = await open({
       filename: databasePath,
